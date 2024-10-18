@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Demo from '../views/DemoView.vue'
+import GitForkView from '../views/GitForkView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,8 +20,13 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path:'/demo',
-      name:'demo',
+      path: '/fork',
+      name: 'github.fork',
+      component: GitForkView
+    },
+    {
+      path: '/demo',
+      name: 'demo',
       component: Demo
     }
   ]

@@ -13,10 +13,15 @@ import Button from './components/Button.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/fork">Fork</RouterLink>
         <RouterLink to="/demo">Demo</RouterLink>
       </nav>
 
-      <Button color="emerald" url="https://ostad.app/en/course/mastering-vue-js" label="I want to learn vue.js"/>
+      <Button
+        color="emerald"
+        url="https://ostad.app/en/course/mastering-vue-js"
+        label="I want to learn vue.js"
+      />
     </div>
   </header>
 
